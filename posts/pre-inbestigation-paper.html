@@ -1,0 +1,441 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Whynot to life | pre-paper notes</title>
+  <meta name="description" content="classic papers.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="pre-paper notes">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://reader001-guius.github.io/chalk_blog/posts/pre-inbestigation-paper">
+  <meta property="og:description" content="classic papers.">
+  <meta property="og:site_name" content="Whynot to life">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:url" content="https://reader001-guius.github.io/chalk_blog/posts/pre-inbestigation-paper">
+  <meta name="twitter:title" content="pre-paper notes">
+  <meta name="twitter:description" content="classic papers.">
+
+  
+    <meta property="og:image" content="https://reader001-guius.github.io/chalk_blog/assets/og-image-ee46bbc61b334e821e81534b1fd43f3fee6f020ec174b3c2114445695fd48c01.jpg">
+    <meta name="twitter:image" content="https://reader001-guius.github.io/chalk_blog/assets/og-image-ee46bbc61b334e821e81534b1fd43f3fee6f020ec174b3c2114445695fd48c01.jpg">
+  
+
+  <link href="https://reader001-guius.github.io/chalk_blog/feed.xml" type="application/rss+xml" rel="alternate" title="Whynot to life Last 10 blog posts" />
+
+  
+
+  
+
+    
+      <link rel="icon" type="image/x-icon" href="/chalk_blog/assets/favicon-light-a98c41efc5ed9fcc06ac664c9e2f7a9b3c3b2e0a52357d221fe382f6f4abc8fc.ico">
+      <link rel="apple-touch-icon" href="/chalk_blog/assets/apple-touch-icon-light-87d1f2a3a19b1500e5c1626a0492025ca5f7f97d24540dc5900288e92112925a.png">
+      <link rel="stylesheet" type="text/css" href="/chalk_blog/assets/light-e5744114fa3caf7887f8393ef0b42268fe55cde41a7b85347ae585feda57723e.css">
+    
+
+  
+
+</head>
+
+<body>
+  <main>
+    <div class="grid grid-centered">
+      <div class="grid-cell">
+        <nav class="header-nav scrollappear">
+  <a href="/chalk_blog/" class="header-logo" title="Whynot to life">Whynot to life</a>
+  <ul class="header-links">
+    
+      <li>
+        <a href="/chalk_blog/about" title="About me">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-about">
+  <use href="/chalk_blog/assets/about-ecf154b571ab8034ae00aeed91a3b7ad68db80b46d958753ad6216c919486e88.svg#icon-about" xlink:href="/chalk_blog/assets/about-ecf154b571ab8034ae00aeed91a3b7ad68db80b46d958753ad6216c919486e88.svg#icon-about"></use>
+</svg>
+
+        </a>
+      </li>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      <li>
+        <a href="/chalk_blog/feed.xml" rel="noreferrer noopener" target="_blank" title="RSS">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-rss">
+  <use href="/chalk_blog/assets/rss-541ec5cea9cefd10d2fcfec01888f3f231a8829940249835fa7b7b3a12ae0d0d.svg#icon-rss" xlink:href="/chalk_blog/assets/rss-541ec5cea9cefd10d2fcfec01888f3f231a8829940249835fa7b7b3a12ae0d0d.svg#icon-rss"></use>
+</svg>
+
+        </a>
+      </li>
+    
+    
+  </ul>
+</nav>
+
+
+
+        <article class="article scrollappear">
+          <nav class="article-toc" aria-label="Table of contents" data-toc>
+            <h2>Contents</h2>
+            <ol></ol>
+          </nav>
+
+          <header class="article-header">
+            <h1>pre-paper notes</h1>
+            <p>classic papers.</p>
+            <div class="article-list-footer">
+  <span class="article-list-date">
+    March 13, 2026
+  </span>
+  <span class="article-list-divider">-</span>
+  <span class="article-list-minutes">
+    
+    
+      3 minute read
+    
+  </span>
+  <span class="article-list-divider">-</span>
+  <div class="article-list-tags">
+    
+  </div>
+</div>
+          </header>
+
+          <div class="article-content">
+            <h1 id="pre-project-paper">pre-project paper</h1>
+
+<h2 id="transformer">Transformer</h2>
+
+<h3 id="encoder-and-decoder">encoder and decoder</h3>
+
+<p><strong>Encoder block</strong></p>
+
+<p>——realise the whole input to understand context</p>
+
+<ul>
+  <li>self-attention</li>
+  <li>FFN</li>
+</ul>
+
+<p><strong>Decoder block</strong></p>
+
+<p>——rely to the known context to generate output</p>
+
+<ul>
+  <li>masked self-attention</li>
+  <li>cross-attention</li>
+  <li>FFN</li>
+</ul>
+
+<p><strong>only encoder</strong></p>
+
+<ul>
+  <li>the different kinds of encoders and dncoders defend on the different kind of tasks model need solve.</li>
+  <li>Bidirectional input processing</li>
+  <li>Strong understanding capabilities</li>
+  <li>Not well-suited for direct long-text generation</li>
+</ul>
+
+<p><strong>only decoder</strong></p>
+
+<ul>
+  <li>Can only process left-side input</li>
+  <li>Inherently suited for generation</li>
+  <li>Can perform many tasks, but primarily relies on prompting / next-token prediction</li>
+</ul>
+
+<p><strong>encoder-decoder</strong></p>
+
+<ul>
+  <li>Encoder handles input comprehension</li>
+  <li>Decoder handles output generation</li>
+  <li>Combines understanding and generation capabilities</li>
+</ul>
+
+<h3 id="original-transformer">original transformer</h3>
+
+<p>encoder-decoder</p>
+
+<p>supervised</p>
+
+<p><img src="https://raw.githubusercontent.com/reader001-guius/markdown-images/main/img/image-20260413195504954.png" alt="image-20260413195504954" /></p>
+
+<p><img src="https://raw.githubusercontent.com/reader001-guius/markdown-images/main/img/image-20260413195526536.png" alt="image-20260413195526536" /></p>
+
+<h3 id="bert">BERT</h3>
+
+<p>Encoder-only</p>
+
+<p>self-supervised  ——haven’t manual annotation</p>
+
+<h4 id="architecture">architecture</h4>
+
+<h5 id="feature-based">feature-based</h5>
+
+<p>frooze pre-trained model , and use it as embedding exaction</p>
+
+<h5 id="fine-tuning">fine-tuning</h5>
+
+<p>train pre-trained model together</p>
+
+<p><img src="https://raw.githubusercontent.com/reader001-guius/markdown-images/main/img/image-20260413195540409.png" alt="image-20260413195540409" /></p>
+
+<p>the reason to have [CLS]: Because BERT is encoder-only, it must compress all tasks into a single input sequence for the same encoder to process,</p>
+
+<p><img src="C:/Users/31575/AppData/Roaming/Typora/typora-user-images/image-20260413195550671.png" alt="image-20260413195550671" /></p>
+
+<h3 id="gpt">GPT</h3>
+
+<p>decoder-only</p>
+
+<p><img src="https://raw.githubusercontent.com/reader001-guius/markdown-images/main/img/image-20260413195635178.png" alt="" /></p>
+
+<p><img src="https://raw.githubusercontent.com/reader001-guius/markdown-images/main/img/image-20260413195639037.png" alt="image-20260413195639037" /></p>
+
+<h2 id="vit">ViT</h2>
+
+<p><img src="https://raw.githubusercontent.com/reader001-guius/markdown-images/main/img/image-20260413195642868.png" alt="image-20260413195642868" /></p>
+
+<h2 id="clip">CLIP</h2>
+
+<p><img src="https://raw.githubusercontent.com/reader001-guius/markdown-images/main/img/image-20260413195651127.png" alt="image-20260413195651127" /></p>
+
+<h3 id="bias">bias</h3>
+
+<h2 id="llava10">LLaVA1.0</h2>
+
+<h3 id="architecture-1">Architecture</h3>
+
+<p><img src="https://raw.githubusercontent.com/reader001-guius/markdown-images/main/img/image-20260413195658656.png" alt="image-20260413195658656" /></p>
+
+<ul>
+  <li>
+    <p><strong>Vision encoder</strong>: CLIP-pretrained <strong>ViT-L/14</strong></p>
+  </li>
+  <li>
+    <p><strong>Projection layer</strong>: a trainable linear matrix  $W$</p>
+  </li>
+  <li>
+    <p><strong>Language model</strong>: Vicuna (decoder-only LLM)</p>
+  </li>
+</ul>
+
+<h3 id="data-construction">Data construction</h3>
+
+<p>LLaVA 1.0 does not rely on large-scale human-written multimodal instructions.\
+Instead, the authors use:</p>
+
+<ul>
+  <li>image captions</li>
+  <li>bounding boxes</li>
+</ul>
+
+<p>as textual visual context, and prompt GPT to generate three types of instruction-following data:</p>
+
+<ul>
+  <li>conversation</li>
+  <li>detailed description</li>
+  <li>complex reasoning</li>
+</ul>
+
+<h3 id="training">Training</h3>
+
+<h4 id="stage-1-feature-alignment">Stage 1: Feature Alignment</h4>
+
+<ul>
+  <li>
+    <p>freeze visual encoder</p>
+  </li>
+  <li>
+    <p>freeze LLM</p>
+  </li>
+  <li>
+    <p>train only projection matrix  $W$</p>
+  </li>
+</ul>
+
+<p>align CLIP visual features to the pretrained LLM embedding space</p>
+
+<p>This stage can be viewed as:\
+<strong>training a compatible visual tokenizer for the frozen LLM</strong></p>
+
+<h4 id="stage-2-end-to-end-fine-tuning--visual-instruction-tuning">Stage 2: End-to-End Fine-tuning / Visual Instruction Tuning</h4>
+
+<ul>
+  <li>
+    <p>keep visual encoder frozen</p>
+  </li>
+  <li>
+    <p>train  $W$  + LLM</p>
+  </li>
+</ul>
+
+<p>teach the model to answer image-grounded instructions, including:</p>
+
+<ul>
+  <li>multimodal chat</li>
+  <li>detailed image description</li>
+  <li>complex reasoning</li>
+</ul>
+
+<h2 id="llava-15">LLaVA-1.5</h2>
+
+<p><img src="https://raw.githubusercontent.com/reader001-guius/markdown-images/main/img/image-20260413195705214.png" alt="image-20260413195705214" /></p>
+
+<p>the improvements ：</p>
+
+<ol>
+  <li>projection-&gt;MLP</li>
+  <li>dataset : add academic-task-oriented data</li>
+  <li>prompt : add response formatting prompts</li>
+  <li>high training sample efficiency</li>
+</ol>
+
+<h2 id="blip">BLIP</h2>
+
+<h3 id="architecture-2">architecture</h3>
+
+<h4 id="model">model</h4>
+
+<p><img src="https://raw.githubusercontent.com/reader001-guius/markdown-images/main/img/image-20260413195709042.png" alt="image-20260413195709042" /></p>
+
+<h4 id="dataset">dataset</h4>
+
+<p><img src="https://raw.githubusercontent.com/reader001-guius/markdown-images/main/img/image-20260413195716779.png" alt="image-20260413195716779" /></p>
+
+<h2 id="blip-2">BLIP-2</h2>
+
+<h3 id="arhitecture">arhitecture</h3>
+
+<h4 id="first-stage">first stage</h4>
+
+<p>train Q-Former</p>
+
+<p><img src="https://raw.githubusercontent.com/reader001-guius/markdown-images/main/img/image-20260413195721016.png" alt="image-20260413195721016" /></p>
+
+<p>**Image-Text Contrastive Learning (ITC) **learns to align image representation and text representation</p>
+
+<p><strong>Image-grounded Text Generation (ITG)</strong> loss trains the Q-Former to generate texts, given input images as the condition.</p>
+
+<p><strong>Image-Text Matching (ITM)</strong> aims to learn fine-grained alignment between image and text representation</p>
+
+<h4 id="second-stage">second stage</h4>
+
+<p><img src="https://raw.githubusercontent.com/reader001-guius/markdown-images/main/img/image-20260413195728346.png" alt="image-20260413195728346" /></p>
+
+<h2 id="qwen">Qwen</h2>
+
+<h3 id="architecture-">architecture :</h3>
+
+<p><img src="https://raw.githubusercontent.com/reader001-guius/markdown-images/main/img/image-20260413195732289.png" alt="image-20260413195732289" /></p>
+
+<h2 id="internvl-15">InternVL-1.5</h2>
+
+<h3 id="architecture-3">architecture</h3>
+
+<p><img src="https://raw.githubusercontent.com/reader001-guius/markdown-images/main/img/image-20260413195736044.png" alt="image-20260413195736044" /></p>
+
+<p><img src="https://raw.githubusercontent.com/reader001-guius/markdown-images/main/img/image-20260413195743162.png" alt="image-20260413195743162" /></p>
+
+<h3 id="insight">insight</h3>
+
+<ul>
+  <li>Strong Vision Encoder</li>
+  <li>dynamic high resolution</li>
+  <li>pixel unshuffle</li>
+  <li>High-Quality Bilingual Dataset</li>
+</ul>
+
+<h2 id="internvl-25">InternVL-2.5</h2>
+
+<p><img src="https://raw.githubusercontent.com/reader001-guius/markdown-images/main/img/image-20260413195747534.png" alt="image-20260413195747534" /></p>
+
+<p><img src="C:/Users/31575/AppData/Roaming/Typora/typora-user-images/image-20260413195752045.png" alt="image-20260413195752045" /></p>
+
+<ul>
+  <li>Dynamic High-Resolution for Multimodal Data</li>
+  <li>Training Pipeline and Progressive Scaling</li>
+  <li>Training Recipe Enhancements</li>
+  <li>Data Recipe and Performance Gains</li>
+</ul>
+
+<h2 id="internvl-3">InternVL-3</h2>
+
+<h3 id="variable-visual-position-encoding">Variable Visual Position Encoding</h3>
+
+<ul>
+  <li>
+    <p>Lookup Table</p>
+  </li>
+  <li>
+    <p>RoPE</p>
+  </li>
+</ul>
+
+<p><img src="https://raw.githubusercontent.com/reader001-guius/markdown-images/main/img/image-20260413195810374.png" alt="image-20260413195810374" /></p>
+
+<h2 id="internvl-35">InternVL-3.5</h2>
+
+<p><img src="https://raw.githubusercontent.com/reader001-guius/markdown-images/main/img/image-20260413195821834.png" alt="image-20260413195821834" /></p>
+
+
+          </div>
+          <div class="article-share">
+            
+            
+            <a href="https://twitter.com/home?status=pre-paper+notes%20-%20https://reader001-guius.github.io/chalk_blog/posts/pre-inbestigation-paper" title="Share on Twitter" rel="noreferrer noopener" target="_blank">
+              <svg viewBox="0 0 512 512"><path d="M492 109.5c-17.4 7.7-36 12.9-55.6 15.3 20-12 35.4-31 42.6-53.6 -18.7 11.1-39.4 19.2-61.5 23.5C399.8 75.8 374.6 64 346.8 64c-53.5 0-96.8 43.4-96.8 96.9 0 7.6 0.8 15 2.5 22.1 -80.5-4-151.9-42.6-199.6-101.3 -8.3 14.3-13.1 31-13.1 48.7 0 33.6 17.2 63.3 43.2 80.7C67 210.7 52 206.3 39 199c0 0.4 0 0.8 0 1.2 0 47 33.4 86.1 77.7 95 -8.1 2.2-16.7 3.4-25.5 3.4 -6.2 0-12.3-0.6-18.2-1.8 12.3 38.5 48.1 66.5 90.5 67.3 -33.1 26-74.9 41.5-120.3 41.5 -7.8 0-15.5-0.5-23.1-1.4C62.8 432 113.7 448 168.3 448 346.6 448 444 300.3 444 172.2c0-4.2-0.1-8.4-0.3-12.5C462.6 146 479 129 492 109.5z"/></svg>
+            </a>
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://reader001-guius.github.io/chalk_blog/posts/pre-inbestigation-paper" title="Share on Facebook" rel="noreferrer noopener" target="_blank">
+              <svg viewBox="0 0 512 512"><path d="M288 192v-38.1c0-17.2 3.8-25.9 30.5-25.9H352V64h-55.9c-68.5 0-91.1 31.4-91.1 85.3V192h-45v64h45v192h83V256h56.4l7.6-64H288z"/></svg>
+            </a>
+          </div>
+
+          
+        </article>
+        <footer class="footer scrollappear">
+  <p>
+    Whynot to life.
+  </p>
+</footer>
+
+      </div>
+    </div>
+  </main>
+  
+
+<script type="text/javascript" src="/chalk_blog/assets/vendor-3ee2c63bbac916f96cd7f90e83ab767f058ead1301444c9966f5156911c8be7f.js"></script>
+
+
+  <script type="text/javascript" src="/chalk_blog/assets/webfonts-96493456d319d1bf419afdf8701552d4d486fee6afd304897d4fd81eb4e0cc0b.js"></script>
+
+
+
+  <script type="text/javascript" src="/chalk_blog/assets/scrollappear-e2da8ea567e418637e31266cc5302126eaa79f62a2273739086358b589a89ee6.js"></script>
+
+
+<script type="text/javascript" src="/chalk_blog/assets/application-f4b8bc24a6fd3a881560d677bb9045cd81a6a06a5c9fb83127cd5d50b714fa27.js"></script>
+
+
+</body>
+</html>

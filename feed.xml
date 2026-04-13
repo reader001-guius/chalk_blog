@@ -10,8 +10,24 @@
         <title>VLM notes</title>
         <description>A structured reading note on 3D spatial question answering, 3D-LLM representations, benchmarks, and early research directions.</description>
         <pubDate>Mon, 13 Apr 2026 00:00:00 +0800</pubDate>
-        <link>https://reader001-guius.github.io/chalk_blog/posts/pre-investigation-3d-sqa-3d-llm</link>
-        <guid isPermaLink="true">https://reader001-guius.github.io/chalk_blog/posts/pre-investigation-3d-sqa-3d-llm</guid>
+        <link>https://reader001-guius.github.io/chalk_blog/posts/investigation-3d-sqa-3d-llm</link>
+        <guid isPermaLink="true">https://reader001-guius.github.io/chalk_blog/posts/investigation-3d-sqa-3d-llm</guid>
+      </item>
+    
+      <item>
+        <title>pre-paper notes</title>
+        <description>classic papers.</description>
+        <pubDate>Fri, 13 Mar 2026 00:00:00 +0800</pubDate>
+        <link>https://reader001-guius.github.io/chalk_blog/posts/pre-inbestigation-paper</link>
+        <guid isPermaLink="true">https://reader001-guius.github.io/chalk_blog/posts/pre-inbestigation-paper</guid>
+      </item>
+    
+      <item>
+        <title>linear algebra notes</title>
+        <description>some details.</description>
+        <pubDate>Mon, 12 Jan 2026 00:00:00 +0800</pubDate>
+        <link>https://reader001-guius.github.io/chalk_blog/posts/linear-algebra</link>
+        <guid isPermaLink="true">https://reader001-guius.github.io/chalk_blog/posts/linear-algebra</guid>
       </item>
     
   </channel>
