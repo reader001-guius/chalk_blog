@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="https://www.w3.org/2005/Atom" xmlns:dc="https://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Whynot to life</title>
+    <description></description>
+    <link>https://reader001-guius.github.io</link>
+    <atom:link href="https://reader001-guius.github.io/chalk_blog/feed.xml" rel="self" type="application/rss+xml" />
+    
+      <item>
+        <title>VLM notes</title>
+        <description>A structured reading note on 3D spatial question answering, 3D-LLM representations, benchmarks, and early research directions.</description>
+        <pubDate>Mon, 13 Apr 2026 00:00:00 +0800</pubDate>
+        <link>https://reader001-guius.github.io/chalk_blog/posts/pre-investigation-3d-sqa-3d-llm</link>
+        <guid isPermaLink="true">https://reader001-guius.github.io/chalk_blog/posts/pre-investigation-3d-sqa-3d-llm</guid>
+      </item>
+    
+  </channel>
+</rss>
